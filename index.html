@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="public/css/materialize.min.css">
+  <link rel="stylesheet" href="public/css/index.css">
+  <title>Investigadores Uca</title>
+</head>
+
+<body>
+    <div class="navbar-fixed">
+      
+    <nav>
+      <!--darken le indicamos la luminosidad que tendra-->
+        <div class="nav-wrapper #01579b light-blue darken-3">
+          <a href="#!" class="brand-logo">
+            UCA
+          </a>
+         
+          <!--Activo el boton Hamburger
+          data-target="mobile-demo" le indicamos a donde estan los elementos que mostrara
+          -->
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          
+           <!--Elementos a mostrar en pantallas de pc-->
+          <ul class="right hide-on-med-and-down">
+            <li> <a href="#">Investigador uca</a></li>
+            <li><a href="#">Inicio<i class="material-icons left">home</i></a></li>
+            <li><a href="#">Contacto<i class="material-icons left">email</i></a></li>
+            <li><a href="#">Acerca<i class="material-icons left">assignment_ind</i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+      <!--Elementos a mostrar en el sidnav del dispositivo mobil y tablet
+      id hace referencia al data-target en este caso del enlace
+      -->
+      <ul class="sidenav" id="mobile-demo">
+          <li>
+            <div class="card-panel">
+                Foto
+            </div>
+          </li>
+          <li><a href="#">Inicio<i class="material-icons left">home</i></a></li>
+          <li><a href="#">Contacto<i class="material-icons left">email</i></a></li>
+          <li><a href="#">Acerca<i class="material-icons left">assignment_ind</i></a></li>
+      </ul>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="card-panel teal">
+          <h1>Titulo</h1>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card-panel pink">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, libero esse. Quas culpa libero distinctio dignissimos eaque vero sint, placeat commodi impedit itaque saepe harum! Aliquam natus atque voluptas voluptates.
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card-panel pink">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate fugit, id laudantium magnam veniam iure quod excepturi assumenda neque illum praesentium perferendis veritatis adipisci, inventore beatae distinctio. Aspernatur, error commodi?
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card-panel pink">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga cum deserunt sint nesciunt quos et, consequuntur atque vero dignissimos doloribus nihil odit nisi consectetur asperiores sequi illo! Reiciendis, necessitatibus laudantium!
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card-panel pink">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cum voluptatem hic facilis dignissimos modi beatae repellat eaque facere. Cum nihil voluptates ea vel eos iste quidem veritatis. Amet, excepturi?
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="public/js/jquery.js"></script>
+  <script src="public/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      M.AutoInit(); /*Inicio todos los compnentes de materialize css*/
+      /*
+        SI SOLO SE DESEA USAR SIDENAV
+        $('.sidenav').sidenav(); 
+      */
+    });
+  </script>
+</body>
+
+</html>
